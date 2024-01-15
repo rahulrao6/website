@@ -1,1 +1,1 @@
-Basic prelim webpage for class
+prelim webpage

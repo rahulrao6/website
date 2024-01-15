@@ -1,26 +1,56 @@
 html {
-  font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high */
-  font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google Fonts */
+  font-size: 10px;
+  font-family: "Open Sans", sans-serif; 
   background-color: #f4f4f4;
+
 
   
 }
+:root {
+  --dark-blue: #18293E;
+  --medium-blue: #0F4D72;
+  --light-blue: #0771A7;
+  --sky-blue: #72BADE;
+  --pale-blue: #B6E0F8;
+  --lightest-blue: #E8F1F2;
+  --grey: #D4D4D4;
+  --brown: #724D28;
+}
+
+body {
+  background-color: var(--lightest-blue);
+  color: var(--dark-blue);
+}
+
+header, footer {
+  background-color: var(--medium-blue);
+}
+
+a, button {
+  background-color: var(--light-blue);
+  color: white;
+}
+
+
 h1,h2 {
   font-size: 60px;
   text-align: center;
   margin: 0;
   padding: 20px 0;
-  color: #00539f;
   text-shadow: 3px 3px 1px black;
+  color: var(--sky-blue);
+
   
 }
 body {
-  width: 600px;
+  max-width: 90%;
   margin: 0 auto;
-  background-color: #ff9500;
-  padding: 0 20px 20px 20px;
-  border: 5px solid black;
-  display:block;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 5px solid #00539f;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 p,
@@ -53,11 +83,17 @@ header {
 }
 
 header nav a {
-  margin: 0 10px;
-  color: #fff;
-  font-size: 1.4rem;
+  display: inline-block;
+    background-color: var(--light-blue);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
+header nav a:hover {
+  background-color: var(--dark-blue);
+}
 section {
   margin-bottom: 40px;
 }
@@ -97,4 +133,7 @@ footer {
   padding: 10px 0;
   margin-top: 40px;
 }
-
+footer a {
+  color: white;
+  margin: 0 10px;
+}

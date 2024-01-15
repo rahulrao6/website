@@ -1,5 +1,5 @@
 const myImage = document.querySelector("img");
-const images = ["images/image1.png", "images/image2.png", "images/image3.png"]; // Add paths to your images
+const images = ["images/image.png", "images/image2.png"]; // Add paths to your images
 let currentImgIndex = 0;
 
 myImage.onclick = () => {
